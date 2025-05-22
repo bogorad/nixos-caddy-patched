@@ -18,8 +18,9 @@ To modify/add plugins:
 
 1. Edit `caddy-src/main.go` as per the upstream docs
 2. Run `go mod tidy`
-3. Must update the hash in `flake.nix`: `nix flake update` !!!
-4. Push to git.
+3. If necessary, update the hash in `flake.nix`
+4. Run `nix build`
+5. Push to git!
 
 You should get a result with the compiled caddy. To verify that the plugins
 where correctly added use:
